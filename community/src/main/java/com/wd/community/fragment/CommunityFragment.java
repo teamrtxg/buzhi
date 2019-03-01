@@ -1,5 +1,6 @@
 package com.wd.community.fragment;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.wd.common.base.fragment.BaseNetFragment;
 import com.wd.community.R;
 /**
@@ -8,6 +9,7 @@ import com.wd.community.R;
   * @描述 社区页面
   *
   */
+@Route(path = "/community/CommunityFragment")
 public class CommunityFragment extends BaseNetFragment {
     @Override
     protected void netSuccess(Object object) {
