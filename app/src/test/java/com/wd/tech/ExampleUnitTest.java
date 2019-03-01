@@ -2,6 +2,8 @@ package com.wd.tech;
 
 import org.junit.Test;
 
+import java.util.HashMap;
+
 import static org.junit.Assert.*;
 
 /**
@@ -12,7 +14,7 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        System.out.println(362/2);
-        String i = "1";
+      String y = "1";
+      y.hashCode();
     }
 }

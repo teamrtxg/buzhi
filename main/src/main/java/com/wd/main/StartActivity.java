@@ -3,10 +3,17 @@ package com.wd.main;
 import android.os.Bundle;
 
 import com.wd.common.base.activity.BaseActivity;
+import com.wd.common.base.activity.BaseTouchNetActivity;
 
-public class StartActivity extends BaseActivity {
+public class StartActivity extends BaseTouchNetActivity {
+
     @Override
-    protected void initP() {
+    protected void netSuccess(Object object) {
+
+    }
+
+    @Override
+    protected void netFail(String s) {
 
     }
 
