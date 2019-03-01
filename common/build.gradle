@@ -1,0 +1,90 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+android {
+    compileSdkVersion 28
+    //防止butkinft报错
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ AROUTER_MODULE_NAME : project.getName() ]
+            }
+        }
+
+    }
+    /*configurations.all {
+           resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+               def requested = details.requested
+               if (requested.group == 'com.android.support') {
+                   if (!requested.name.startsWith("multidex")) {
+                       details.useVersion '28.0.0'//根据你的底下appcompat-v7版本
+                   }
+               }
+           }
+    }*/
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    //TODO 向下依赖,两个都没写
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //retrofit依赖
+    api "com.squareup.okhttp3:logging-interceptor:$rootProject.interceptor"
+    api "com.squareup.retrofit2:retrofit:$rootProject.retrofit"
+    api "com.squareup.retrofit2:converter-gson:$rootProject.converterGson"
+    api "io.reactivex:rxandroid:$rootProject.rxandroid"
+    api "io.reactivex:rxjava:$rootProject.rxjava"
+    api "com.hwangjr.rxbus:rxbus:$rootProject.rxbus"
+    api "com.squareup.retrofit2:adapter-rxjava:$rootProject.adapterRxjava"
+
+    //fresco依赖
+    api "com.facebook.fresco:fresco:$rootProject.fresco"
+
+    //EventBus依赖
+    api "org.greenrobot:eventbus:$rootProject.eventbus"
+
+    //recyclerview依赖
+    api "com.android.support:recyclerview-v7:$rootProject.recyclerview"
+
+    //xrecycleview依赖
+    api "com.jcodecraeer:xrecyclerview:$rootProject.xrecyclerview"
+
+    //butterknife
+    api "com.jakewharton:butterknife:$rootProject.butterknife"
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc3'
+
+    //阿里路由
+    api 'com.alibaba:arouter-api:1.4.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+
+    //工具类集合
+    api 'com.blankj:utilcode:1.23.4'
+    api 'com.android.support:design:28.0.0'
+
+    /*屏幕适配*/
+    api 'me.jessyan:autosize:1.1.2'
+
+    //
+}
