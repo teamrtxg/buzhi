@@ -1,10 +1,19 @@
-package com.wd.main;
+package com.wd.main.activity;
+
 
 import android.os.Bundle;
 
 import com.wd.common.base.activity.BaseActivity;
+import com.wd.main.R;
 
-public class StartActivity extends BaseActivity {
+/**
+ *首页Activity
+ *@author Administrator
+ *@time 2019/3/1 0001 15:49
+ */
+public class HomeActivity extends BaseActivity {
+
+
     @Override
     protected void initP() {
 
@@ -12,7 +21,7 @@ public class StartActivity extends BaseActivity {
 
     @Override
     protected int setView() {
-        return R.layout.activity_start;
+        return R.layout.activity_home;
     }
 
     @Override
