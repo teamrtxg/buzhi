@@ -3,12 +3,14 @@ package com.wd.message.fragment;
 import android.os.Bundle;
 import android.view.View;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.wd.common.base.fragment.BaseFragment;
-
+import com.wd.message.R;
+@Route(path = "/message/MessageFragment")
 public class MessageFragment extends BaseFragment {
     @Override
     protected int setView() {
-        return 0;
+        return R.layout.message_fragment;
     }
 
     @Override
