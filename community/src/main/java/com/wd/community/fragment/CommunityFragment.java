@@ -23,4 +23,5 @@ public class CommunityFragment extends BaseNetFragment {
     protected void initData() {
 
     }
+
 }
