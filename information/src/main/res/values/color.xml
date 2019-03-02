@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black" tools:ignore="MissingDefaultResource">#000000</color>
+    <color name="homeColorThree" tools:ignore="MissingDefaultResource">#666666</color>
+    <color name="homeColor" tools:ignore="MissingDefaultResource">#cccccc</color>
+</resources>

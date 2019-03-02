@@ -84,9 +84,13 @@ public class HomeActivity extends BaseActivity {
      * @time 2019/3/1 0001 17:55
      */
     private void getFragment() {
+        //资讯fragment
         informationFragment = (Fragment) ARouter.getInstance().build("/information/InformationFragment").navigation();
+        //消息fragment
         messageFragment = (Fragment) ARouter.getInstance().build("/message/MessageFragment").navigation();
+        //社区fragment
         communityFragment = (Fragment) ARouter.getInstance().build("/community/CommunityFragment").navigation();
+        //侧滑fragment
         myFragment = (Fragment) ARouter.getInstance().build("/main/MyFragment").navigation();
         //默认加载资讯页面fragment
         FragmentManager supportFragmentManager = getSupportFragmentManager();
@@ -100,14 +104,14 @@ public class HomeActivity extends BaseActivity {
         FragmentManager drawFragmentManager = getSupportFragmentManager();
         FragmentTransaction drawTransaction = drawFragmentManager.beginTransaction();
         drawTransaction.add(R.id.drawerlayout_fragment, myFragment, myFragment.getClass().getName());
-        drawTransaction.show(myFragment);
+        //drawTransaction.show(myFragment);
         drawTransaction.commit();
-
 
     }
 
     @Override
     protected void initData() {
+        //资讯选择按钮
         activityLinearInformation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,8 +124,7 @@ public class HomeActivity extends BaseActivity {
                 transactionInformation.hide(messageFragment);
                 transactionInformation.hide(communityFragment);
                 transactionInformation.commit();
-
-
+                //改变选中状态
                 activityImgInformation.setImageResource(R.mipmap.common_tab_informatiion_s);
                 activityImgMessage.setImageResource(R.mipmap.common_tab_message_n);
                 activityImgCommunity.setImageResource(R.mipmap.common_tab_community_n);
@@ -131,6 +134,7 @@ public class HomeActivity extends BaseActivity {
                 activityTextCommunity.setTextColor(getResources().getColor(R.color.homeColorThree));
             }
         });
+        //信息选择按钮
         activityLinearMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -144,6 +148,7 @@ public class HomeActivity extends BaseActivity {
                 transactionMessage.hide(informationFragment);
                 transactionMessage.hide(communityFragment);
                 transactionMessage.commit();
+                //改变选中状态
                 activityImgInformation.setImageResource(R.mipmap.common_tab_information_n);
                 activityImgMessage.setImageResource(R.mipmap.common_tab_message_s);
                 activityImgCommunity.setImageResource(R.mipmap.common_tab_community_n);
@@ -153,6 +158,7 @@ public class HomeActivity extends BaseActivity {
                 activityTextCommunity.setTextColor(getResources().getColor(R.color.homeColorThree));
             }
         });
+        //社区选择按钮
         activityLinearCommunity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -166,6 +172,7 @@ public class HomeActivity extends BaseActivity {
                 transactionCommunity.hide(informationFragment);
                 transactionCommunity.hide(messageFragment);
                 transactionCommunity.commit();
+                //改变选中状态
                 activityImgInformation.setImageResource(R.mipmap.common_tab_information_n);
                 activityImgMessage.setImageResource(R.mipmap.common_tab_message_n);
                 activityImgCommunity.setImageResource(R.mipmap.common_tab_community_s);
