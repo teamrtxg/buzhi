@@ -54,4 +54,5 @@ dependencies {
     implementation project(':message')
     implementation project(':main')
     implementation project(':thirdparty')
+    implementation project(':common')
 }

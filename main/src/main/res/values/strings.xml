@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">main</string>
+    <string name="text_information_name">资讯</string>
+    <string name="text_message_name">消息</string>
+    <string name="text_community_name">社区</string>
+    <string name="start_Title">维度科技</string>
+    <string name="start_Title_text">WEIDUKEJI</string>
+    <string name="start_text">八维移动通信学院作品</string>
 </resources>
