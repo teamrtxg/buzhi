@@ -3,4 +3,10 @@
     <color name="title_color">#ffffff</color>
     <color name="title_checked_bg_color">#20aff9</color>
     <color name="title_unchecked_text_color">#333333</color>
+    <color name="message_group_bg_color">#f2f2f2</color>
+    <color name="personal_name_color">#666666</color>
+    <color name="personal_integral_color">#ff5552</color>
+    <color name="personal_autograph_color">#999999</color>
+    <color name="personal_last_login_color">#dddddd</color>
+    <color name="data_name_color">#000000</color>
 </resources>

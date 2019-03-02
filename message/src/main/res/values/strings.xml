@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">message</string>
+    <string name="message_group_name">聚会群</string>
+    <string name="group_members">群成员</string>
+    <string name="group_members_person">共5人</string>
+    <string name="group_notification">群通知</string>
+    <string name="group_chat_recored">查询聊天记录</string>
+    <string name="group_out">退出群组</string>
+    <string name="group_dissolution">解散群组</string>
+    <string name="group_manage">群管理</string>
+    <string name="group_summary">群简介</string>
+    <string name="personal_name">YUMA</string>
+    <string name="personal_integral">(120积分)</string>
+    <string name="personal_autograph">世上本无事，庸人自扰之</string>
+    <string name="personal_data">- - - - - - - - - - - - - - - - 个人资料 - - - - - - - - - - - - - - - -</string>
+    <string name="personal_sex_birth">女(1995-02-16)</string>
+    <string name="personal_phone">132****6490</string>
+    <string name="personal_email">fhgnlgli@163.com</string>
+    <string name="personal_send">发消息</string>
+    <string name="personal_last_login">上次登录时间：2019-10-09</string>
+    <string name="personal_edit">编辑</string>
+    <string name="create_title">创建群聊</string>
+    <string name="create_name">填写群名称（2-20汉字）</string>
+    <string name="create_describe">介绍下您的群吧，让更多朋友加入！</string>
+    <string name="create_text_describe">100字以内</string>
+    <string name="create">创建</string>
+    <string name="data_chat_set">聊天设置</string>
+    <string name="data_name">米米</string>
+    <string name="data_nike">王小米</string>
+    <string name="data_clear_record">清空聊天记录</string>
+    <string name="data_delete_friend">删除好友</string>
+    <string name="group_list_title">群组</string>
+    <string name="group_list_search">search</string>
 </resources>

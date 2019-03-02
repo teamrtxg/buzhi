@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:background="@color/message_group_bg_color"
+    tools:context=".activity.GroupListActivity">
+
+    <include layout="@layout/merge_back_image"/>
+
+    <TextView
+        android:id="@+id/group_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/group_list_title"
+        android:textColor="@color/personal_name_color"
+        android:textSize="20sp"
+        />
+    <RelativeLayout
+        android:id="@+id/group_list_search_relative"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/group_list_title"
+        android:background="@color/title_color"
+        >
+        <com.wd.message.view.GroupListSearchView
+            android:layout_width="336dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/group_list_search_bg"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_color"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/group_list_search_relative"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/group_list_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            />
+    </ScrollView>
+</RelativeLayout>
