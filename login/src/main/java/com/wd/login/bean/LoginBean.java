@@ -1,4 +1,4 @@
-package com.wd.login;
+package com.wd.login.bean;
 
 public class LoginBean {
 

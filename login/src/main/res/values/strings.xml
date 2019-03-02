@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">login</string>
+    <string name="login_phoneEdit_hint">手机号</string>
+    <string name="login_pwdEdit_hint">密码</string>
+    <string name="login_text_register">快速注册</string>
+    <string name="login_button_login">登录</string>
+    <string name="login_text_login">第三方账号快速登录</string>
+    <string name="register_nameEdit_hint">昵称</string>
 </resources>

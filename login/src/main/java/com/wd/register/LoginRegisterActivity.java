@@ -1,12 +1,10 @@
-package com.wd.login;
+package com.wd.register;
 
 import android.os.Bundle;
-import com.wd.common.base.activity.BaseNetActivity;
 
+import com.wd.common.base.activity.BaseTouchNetActivity;
 
-public class LoginHome extends BaseNetActivity {
-
-
+public class LoginRegisterActivity extends BaseTouchNetActivity {
     @Override
     protected void netSuccess(Object object) {
 
@@ -19,7 +17,7 @@ public class LoginHome extends BaseNetActivity {
 
     @Override
     protected int setView() {
-        return R.layout.activity_login_home;
+        return 0;
     }
 
     @Override
