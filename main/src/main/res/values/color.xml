@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="homeColorThree">#666666</color>
+    <color name="homeColorAsh">#333333</color>
     <color name="homeColorWhite">#ffffff</color>
 </resources>

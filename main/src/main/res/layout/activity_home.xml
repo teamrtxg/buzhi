@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout android:id="@+id/v4_drawerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
-
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--主界面-->
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <FrameLayout
         android:id="@+id/activity_home_frame"
         android:layout_width="match_parent"
@@ -14,16 +18,13 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#f0f0f0"
-        android:layout_above="@id/activity_home_ll"
-        />
+        android:layout_above="@id/activity_home_ll" />
     <LinearLayout
         android:id="@+id/activity_home_ll"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        >
-
+        android:layout_alignParentBottom="true">
         <LinearLayout
             android:id="@+id/activity_linear_information"
             android:layout_width="wrap_content"
@@ -50,7 +51,6 @@
                 android:layout_marginTop="6dp"
                 />
         </LinearLayout>
-
         <LinearLayout
             android:id="@+id/activity_linear_message"
             android:layout_width="wrap_content"
@@ -76,7 +76,6 @@
                 android:textColor="@color/homeColorThree"
                 android:layout_marginTop="6dp"/>
         </LinearLayout>
-
         <LinearLayout
             android:id="@+id/activity_linear_community"
             android:layout_width="wrap_content"
@@ -93,7 +92,6 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@mipmap/common_tab_community_n"/>
-
             <TextView
                 android:id="@+id/activity_text_community"
                 android:layout_width="wrap_content"
@@ -104,8 +102,14 @@
                 android:textColor="@color/homeColorThree"
                 android:layout_marginTop="6dp"/>
         </LinearLayout>
-
-
     </LinearLayout>
-
 </RelativeLayout>
+    <!--侧滑界面-->
+    <FrameLayout
+        android:id="@+id/drawerlayout_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:choiceMode="singleChoice"
+        android:background="@android:color/white" />
+</android.support.v4.widget.DrawerLayout>

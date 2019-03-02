@@ -1,3 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">information</string>
+    <string name="information" tools:ignore="ExtraTranslation">资讯</string>
 </resources>

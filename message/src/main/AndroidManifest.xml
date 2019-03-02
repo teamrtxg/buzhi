@@ -1,2 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wd.message" />
+    package="com.wd.message">
+
+    <application>
+        <activity android:name=".activity.GroupInformationActivity" />
+        <activity android:name=".activity.GroupOwnerInformationActivity" />
+        <activity android:name=".activity.PersonalInformationActivity" />
+        <activity android:name=".activity.GroupCreateActivity" />
+        <activity android:name=".activity.PersonalDataActivity" />
+        <activity android:name=".activity.GroupListActivity"></activity>
+    </application>
+
+</manifest>
