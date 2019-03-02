@@ -89,4 +89,6 @@ dependencies {
 
     //xbanner
     api 'com.github.xiaohaibin:XBanner:1.6.4'
+    //自定义刷新加载
+    api 'cn.bingoogolapple:bga-refreshlayout:1.0.7@aar'
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#fcfc"
+    android:background="@color/message_group_bg_color"
     >
     <RadioGroup
-        android:id="@+id/message_tab"
+        android:id="@+id/message_group"
         android:layout_width="188dp"
         android:layout_height="30dp"
         android:layout_marginTop="30dp"
@@ -18,7 +18,6 @@
             android:layout_height="match_parent"
             android:button="@null"
             android:gravity="center"
-            android:checked="true"
             android:background="@drawable/message_title_bg_selector"
             android:textColor="@drawable/message_title_text_selector"
             android:text="消息"
@@ -41,14 +40,14 @@
         android:layout_height="24dp"
         android:layout_alignParentRight="true"
         android:background="@mipmap/common_nav_btn_add_n"
-        android:layout_alignTop="@id/message_tab"
+        android:layout_alignTop="@id/message_group"
         android:layout_marginRight="12dp"
         />
     <android.support.v4.view.ViewPager
         android:id="@+id/message_viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/message_tab"
+        android:layout_below="@+id/message_group"
         android:layout_marginTop="10dp"
         android:layout_alignParentBottom="true"
         />
